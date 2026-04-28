@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Productividad</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1f2937; background: #f9fafb; line-height: 1.7; }
+    .container { max-width: 740px; margin: 0 auto; padding: 60px 24px 80px; background: #fff; min-height: 100vh; }
+    h1 { font-size: 2rem; font-weight: 700; color: #111827; margin-bottom: 8px; }
+    .subtitle { color: #6b7280; font-size: 0.95rem; margin-bottom: 48px; }
+    h2 { font-size: 1.15rem; font-weight: 600; color: #111827; margin: 36px 0 10px; }
+    p { color: #374151; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { color: #374151; margin-bottom: 6px; }
+    .highlight { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 14px 18px; border-radius: 4px; margin: 24px 0; }
+    .highlight p { margin: 0; font-weight: 500; color: #166534; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Productividad · Last updated: April 28, 2026</p>
+
+    <div class="highlight">
+      <p>Productividad is a local desktop application. Your data never leaves your device and is never sent to any server controlled by the developer.</p>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>Productividad ("the App") is a Windows desktop productivity application developed by Carlos Mahillo. This Privacy Policy explains how the App handles information when you use its features, including Google Calendar integration, Microsoft Calendar integration, clipboard history, and screenshot tools.</p>
+
+    <h2>2. Data We Do NOT Collect</h2>
+    <p>The developer does not collect, store, transmit, or have access to any of your personal data. Specifically:</p>
+    <ul>
+      <li>No analytics or telemetry is sent anywhere.</li>
+      <li>No crash reports are transmitted to any server.</li>
+      <li>No usage data is collected.</li>
+      <li>The App has no backend server of any kind.</li>
+    </ul>
+
+    <h2>3. Google Calendar Integration</h2>
+    <p>If you choose to connect your Google account, the App uses Google's OAuth 2.0 protocol to request read access to your calendar events. The following applies:</p>
+    <ul>
+      <li>Authentication is handled entirely by Google's own authentication servers.</li>
+      <li>OAuth tokens (access token and refresh token) are stored exclusively on your local device, inside the App's data directory (<code>%APPDATA%\productividad</code>).</li>
+      <li>Calendar event data (titles, times, descriptions) is fetched directly from Google's API and displayed only within the App. It is never stored persistently and is not transmitted elsewhere.</li>
+      <li>The App requests the minimum necessary scope: read-only access to your calendar events (<code>https://www.googleapis.com/auth/calendar.readonly</code>).</li>
+      <li>You can revoke access at any time from your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions page</a>.</li>
+    </ul>
+
+    <h2>4. Microsoft Calendar Integration</h2>
+    <p>If you choose to connect your Microsoft account, the same principles apply:</p>
+    <ul>
+      <li>Authentication is handled by Microsoft's identity platform (OAuth 2.0).</li>
+      <li>Tokens are stored locally on your device only.</li>
+      <li>Calendar data is fetched from Microsoft Graph API and displayed in the App only.</li>
+      <li>You can revoke access at any time from your <a href="https://account.microsoft.com/privacy/app-access" target="_blank">Microsoft account settings</a>.</li>
+    </ul>
+
+    <h2>5. Clipboard History</h2>
+    <p>The App monitors your clipboard to maintain a local history of copied items (text and images). This data is:</p>
+    <ul>
+      <li>Stored exclusively on your local device.</li>
+      <li>Never transmitted outside your device.</li>
+      <li>Automatically limited to the 300 most recent entries.</li>
+      <li>Deletable at any time from within the App.</li>
+    </ul>
+
+    <h2>6. Screenshots</h2>
+    <p>The screenshot annotation feature captures your screen locally using Electron's <code>desktopCapturer</code> API. Screenshots are:</p>
+    <ul>
+      <li>Processed entirely in memory on your device.</li>
+      <li>Never stored to disk unless you explicitly choose "Save PNG".</li>
+      <li>Never transmitted anywhere.</li>
+    </ul>
+
+    <h2>7. Local Storage</h2>
+    <p>The App stores the following data locally on your device in <code>%APPDATA%\productividad\</code>:</p>
+    <ul>
+      <li>Your notes and whiteboard content.</li>
+      <li>OAuth tokens for Google and/or Microsoft (if you connect these services).</li>
+      <li>App settings and keyboard shortcuts.</li>
+      <li>Clipboard image files (temporary cache).</li>
+    </ul>
+    <p>All of this data remains on your device and under your full control.</p>
+
+    <h2>8. Third-Party Services</h2>
+    <p>The App communicates only with the following third-party services, and only when you explicitly connect them:</p>
+    <ul>
+      <li><strong>Google APIs</strong> — to authenticate and retrieve calendar events. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+      <li><strong>Microsoft Graph API</strong> — to authenticate and retrieve calendar events. Governed by <a href="https://privacy.microsoft.com/privacystatement" target="_blank">Microsoft's Privacy Statement</a>.</li>
+    </ul>
+
+    <h2>9. Children's Privacy</h2>
+    <p>The App is not directed at children under the age of 13 and does not knowingly collect any information from children.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If this policy is updated, the "Last updated" date at the top of this page will reflect the change. Continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+
+    <h2>11. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, you can contact the developer at:</p>
+    <p><a href="mailto:carlos.mahillo@garauingenieros.es">carlos.mahillo@garauingenieros.es</a></p>
+
+    <footer>
+      <p>Productividad · Developed by Carlos Mahillo · <a href="https://github.com/CMahillo/productividad-privacy">View on GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
